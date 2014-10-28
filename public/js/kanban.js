@@ -79,7 +79,7 @@ Kanban.on({
 		}, 500);
 	},
 	clearBoard: function(evt) {
-		if (confirm('Het bord leegmaken en alle kaartjes verwijderen?')) {
+		if (confirm('Are you sure you wan\'t to remove all cards?')) {
 			$.post('/clear' , {}, function(cards) {
 				Kanban.set('cards', []);
 			});

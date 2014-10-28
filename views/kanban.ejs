@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Kanbanbord</title>
+	<title>Kanban board</title>
 	<link rel="icon" href="/images/favicon.png" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="/css/stylesheet.css">
@@ -90,10 +90,10 @@
 			</table>
 		</div>
 		<div class="actionsbar">
-			<a href="#" on-click="addCard"><i class="fa fa-plus-square"></i> Kaart toevoegen</a>
-			<a href="/export"><i class="fa fa-upload"></i> Exporteren</a>
-			<a href="#" on-click="selectFile"><i class="fa fa-download"></i> Importeren</a>
-			<a href="#" on-click="clearBoard"><i class="fa fa-trash-o"></i> Legen</a>
+			<a href="#" on-click="addCard"><i class="fa fa-plus-square"></i> New card</a>
+			<a href="/export"><i class="fa fa-upload"></i> Export</a>
+			<a href="#" on-click="selectFile"><i class="fa fa-download"></i> Import</a>
+			<a href="#" on-click="clearBoard"><i class="fa fa-trash-o"></i> Clear board</a>
 			<form action="/import" method="post" enctype="multipart/form-data" id="file-form">
 				<input type="file" name="file" id="file-upload" on-change="uploadFile" style="display:none">
 			</form>
