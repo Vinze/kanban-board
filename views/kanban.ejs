@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Kanbanbord</title>
+	<link rel="icon" href="/images/favicon.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/stylesheet.css">
+</head>
+<body>
+	<div id="content">
+	</div>
+	
+	<script type="text/template" id="template">
+		<div class="board">
+			<table>
+				<thead>
+					<tr>
+						<th>Backlog</th>
+						<th>Todo</th>
+						<th>Doing</th>
+						<th>Verify</th>
+						<th class="last">Done</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<ul class="card-list">
+								{{#each cards:i}}
+									{{#if status == 'backlog'}}
+										<li on-click="openCard:{{i}}" class="card">
+											<div class="priority p-{{{priority}}}"></div>
+											{{{formatText(description)}}}
+										</li>
+									{{/if}}
+								{{/each}}
+							</ul>
+						</td>
+						<td>
+							<ul class="card-list">
+								{{#each cards:i}}
+									{{#if status == 'todo'}}
+										<li on-click="openCard:{{i}}" class="card">
+											<div class="priority p-{{{priority}}}"></div>
+											{{{formatText(description)}}}
+										</li>
+									{{/if}}
+								{{/each}}
+							</ul>
+						</td>
+						<td>
+							<ul class="card-list">
+								{{#each cards:i}}
+									{{#if status == 'doing'}}
+										<li on-click="openCard:{{i}}" class="card">
+											<div class="priority p-{{{priority}}}"></div>
+											{{{formatText(description)}}}
+										</li>
+									{{/if}}
+								{{/each}}
+							</ul>
+						</td>
+						<td>
+							<ul class="card-list">
+								{{#each cards:i}}
+									{{#if status == 'verify'}}
+										<li on-click="openCard:{{i}}" class="card">
+											<div class="priority p-{{{priority}}}"></div>
+											{{{formatText(description)}}}
+										</li>
+									{{/if}}
+								{{/each}}
+							</ul>
+						</td>
+						<td class="last">
+							<ul class="card-list">
+								{{#each cards:i}}
+									{{#if status == 'done'}}
+										<li on-click="openCard:{{i}}" class="card">
+											<div class="priority p-{{{priority}}}"></div>
+											{{{formatText(description)}}}
+										</li>
+									{{/if}}
+								{{/each}}
+							</ul>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="actionsbar">
+			<a href="#" on-click="addCard"><i class="fa fa-plus-square"></i> Kaart toevoegen</a>
+			<a href="/export"><i class="fa fa-upload"></i> Exporteren</a>
+			<a href="#" on-click="selectFile"><i class="fa fa-download"></i> Importeren</a>
+			<a href="#" on-click="clearBoard"><i class="fa fa-trash-o"></i> Legen</a>
+			<form action="/import" method="post" enctype="multipart/form-data" id="file-form">
+				<input type="file" name="file" id="file-upload" on-change="uploadFile" style="display:none">
+			</form>
+		</div>
+		{{#if editing != null}}
+			<div class="overlay" on-click="closeCard" intro-outro="fade">
+				<div class="modal" on-click="stopPropagation" intro-outro="fly:{ y: -100, x: 0 }">
+					<a href="#" on-click="deleteCard" class="remove-card">Verwijderen</a>
+					<p><textarea name="description" id="description" rows="10" value="{{cards[editing].description}}"></textarea></p>
+					<p>
+						<label>Status:</label>
+						<a href="#" class="switch" on-click="setStatus:backlog">backlog</a>
+						<a href="#" class="switch" on-click="setStatus:todo">todo</a>
+						<a href="#" class="switch" on-click="setStatus:doing">doing</a>
+						<a href="#" class="switch" on-click="setStatus:verify">verify</a>
+						<a href="#" class="switch" on-click="setStatus:done">done</a>
+					</p>
+					<p>
+						<label>Prioriteit:</label>
+						<a href="#" class="switch p-1" on-click="setPriority:1">hoog</a>
+						<a href="#" class="switch p-2" on-click="setPriority:2">middel</a>
+						<a href="#" class="switch p-3" on-click="setPriority:3">laag</a>
+					</p>
+				</div>
+			</div>
+		{{/if}}
+	</script>
+	<script type="text/javascript" src="/js/libs/jquery.min.js"></script>
+	<script type="text/javascript" src="/js/libs/ractive.min.js"></script>
+	<script type="text/javascript" src="/js/libs/ractive-plugins.min.js"></script>
+	<script type="text/javascript" src="/js/libs/marked.min.js"></script>
+	<script type="text/javascript" src="/js/kanban.js"></script>
+</body>
+</html>

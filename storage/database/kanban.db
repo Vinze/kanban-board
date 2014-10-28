@@ -1,0 +1,15 @@
+{"description":"# Gesprek Dirk Sierd","status":"done","priority":3,"created_at":1414056013,"updated_at":1414159920,"_id":"3mnXxTfqF6MOudjf"}
+{"description":"# Afstudeerplan\n- Laten onderteken door Hendrik Tillema","status":"verify","priority":1,"created_at":1414000857,"updated_at":1414001936,"_id":"5xSEUnZKiLsJTQzU"}
+{"description":"# Logo design\n- Lettertype zoeken","status":"backlog","priority":3,"created_at":1414001256,"updated_at":1414007500,"_id":"8r2AOais2RADAgB1"}
+{"description":"# Rocket Surgery Made Easy\n- Of misschien een ander boek over user tests?","status":"backlog","priority":3,"created_at":1414001063,"updated_at":1414056752,"_id":"BoereozCJFXWX8Bb"}
+{"description":"# Testpersonen\n- Zoeken naar testpersonen\n- Projectgroep uit TNW of andere CMD minor\n- Samen met mede afstudeerders\n- Minimaal 1 bedrijf","status":"backlog","priority":3,"created_at":1414001270,"updated_at":1414056199,"_id":"BpQCu7JfxZbBQAe9"}
+{"description":"# The Mobile Web Handbook\n- Boek doorlezen","status":"doing","priority":3,"created_at":1414001032,"updated_at":1414064996,"_id":"J0RmvKxYRxFaj6Tr"}
+{"description":"# Kanbanbord\n- Backlog, todo, doing, verify, done\n- Prioriteren\n- Import/export?","status":"done","priority":2,"created_at":1414000904,"updated_at":1414403834,"_id":"WH8UUehkdxhGfJ3I"}
+{"description":"# User stories schrijven","status":"doing","priority":1,"created_at":1414001017,"updated_at":1414403830,"_id":"gZSOpj7FVdfHE6mN"}
+{"description":"# Testplan schrijven","status":"backlog","priority":3,"created_at":1414001047,"updated_at":1414055885,"_id":"jXXy9wCvQd8oT1u3"}
+{"description":"# Gesprek Jan-Wessel\n- Ik moet gestructureerder werken\n- User stories schrijven\n","status":"done","priority":3,"created_at":1414052225,"updated_at":1414052263,"_id":"lYqrlCraYt2g9LIH"}
+{"description":"# Research\n- Doelgroep omschrijven (21ste century skills)\n- Feedbacksystemen\n- Conclusies","status":"todo","priority":1,"created_at":1414000899,"updated_at":1414403973,"_id":"pzD6rD2zkbjwSu1H"}
+{"description":"# Jasmine\n- Doornemen met DSDV (15:00)","status":"verify","priority":3,"created_at":1414000883,"updated_at":1414065053,"_id":"sQQXT6bSeuMkw087"}
+{"description":"# Projectplan\n- Definition of done\n- Sprint planning\n- Doelstelling(en)","status":"todo","priority":1,"created_at":1414001349,"updated_at":1414403751,"_id":"sYiLJvU9FQ2f4haP"}
+{"description":"# Design document\n- Keuzes verantwoorden\n  - Logo\n  - Node vs PHP","status":"backlog","priority":3,"created_at":1414001078,"updated_at":1414403984,"_id":"wfyJXruIilVzuTlT"}
+{"description":"# Paper prototype\n- Popapp (https://popapp.in/)","status":"doing","priority":1,"created_at":1414001220,"updated_at":1414159929,"_id":"ycvyqDsFgs9QF3s7"}

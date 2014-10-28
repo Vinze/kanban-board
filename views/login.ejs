@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="nl">
+<head>
+	<meta charset="UTF-8">
+	<title>Kanbanbord</title>
+	<link rel="icon" href="/images/favicon.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/stylesheet.css">
+</head>
+<body>
+	
+	<div class="login">
+		<h1>Inloggen:</h1>
+		<form method="post" action="/login">
+			<p><input type="password" name="pw" id="pw" placeholder="Code:"></p>
+			<p><button type="submit" class="btn-confirm"><i class="fa fa-sign-in"></i> Login</button></p>
+		</form>
+	</div>
+
+	<script type="text/javascript">
+
+	// function getDuration(tasks) {
+	// 	var total = 0;
+	// 	for (var i = 0; i < tasks.length; i++) {
+	// 		total += tasks[i].duration;
+	// 	}
+	// 	return total;
+	// }
+
+	// var tasks = [
+	// 	{ name: 'Lorem #05', duration: 1 },
+	// 	{ name: 'Lorem #06', duration: 1 },
+	// 	{ name: 'Lorem #07', duration: 1 },
+	// 	{ name: 'Lorem #08', duration: 1 },
+	// 	{ name: 'Lorem #01', duration: 2 },
+	// 	{ name: 'Lorem #02', duration: 2 },
+	// 	{ name: 'Lorem #03', duration: 2 },
+	// 	{ name: 'Lorem #04', duration: 2 },
+	// 	{ name: 'Lorem #09', duration: 2 },
+	// 	{ name: 'Lorem #10', duration: 2 },
+	// 	{ name: 'Lorem #11', duration: 2 },
+	// 	{ name: 'Lorem #12', duration: 2 },
+	// ];
+
+	// var users = [
+	// 	{ name: 'Tjerk', tasks: [], duration: 0 },
+	// 	{ name: 'Harold', tasks: [], duration: 0 },
+	// 	{ name: 'Ronald', tasks: [], duration: 0 },
+	// 	{ name: 'Koop', tasks: [], duration: 0 },
+	// 	{ name: 'Tjisse', tasks: [], duration: 0 },
+	// 	{ name: 'Vincent', tasks: [], duration: 0 }
+	// ];
+
+	// console.log(_.shuffle(users));
+
+	// var maxTasksPerUser = getDuration(tasks) / users.length;
+
+	// _.each(tasks, function(task, i) {
+	// 	_.each(users, function(user) {
+	// 		tasks.splice(i, 1);
+	// 		console.log(i, tasks);
+	// 	});
+
+	// });
+
+	// for (var i = 0; i < users.length; i++) {
+	// 	console.log(users[i].name + ' gets:');
+	// 	if (users[i].duration < Math.floor(maxTasksPerUser)) {
+	// 		for (var x = 0; x < tasks.length; x++) {
+	// 			if ((users[i].duration + tasks[x].duration) <= Math.floor(maxTasksPerUser)) {
+	// 				console.log(tasks[x].name + ' (duration: ' + tasks[x].duration + ')');
+	// 				users[i].tasks.push(tasks[x]);
+	// 				users[i].duration += tasks[x].duration;
+	// 				tasks.splice(x, 1);
+	// 			}
+	// 		}
+	// 	}
+	// }
+
+	// if (maxTasksPerUser % 1 != 0) {
+	// 	users[users.length - 1].tasks.push(tasks[0]);
+	// 	users[users.length - 1].duration += tasks[0].duration;
+	// 	console.log(tasks[0].name + ' (duration: ' + tasks[0].duration + ')');
+	// }
+
+	// console.log(users);
+	
+	</script>
+</body>
+</html>
